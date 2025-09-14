@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSV to Chart.js - Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="big-container">
+
+    <!-- Marksheet -->
+    <section>
+      <h2>Upload Marksheet (CSV)</h2>
+      <div class="container">
+        <label for="type1">Which type of chart do you want?</label><br>
+        <input type="text" id="type1" placeholder="e.g. bar, line, pie, doughnut">
+        <br>
+        <label for="csvFile1">Upload your marksheet:</label><br>
+        <input type="file" id="csvFile1" accept=".csv">
+        <p class="note">📌 CSV format should include two columns: <b>Subject</b> and <b>Marks</b>.</p>
+        <canvas id="Chart1"></canvas>
+        <button id="download1">Download Chart</button>
+      </div>
+    </section>
+
+    <!-- Website Visitors -->
+    <section>
+      <h2>Website Visitors Counter</h2>
+      <div class="container">
+        <label for="type2">Which type of chart do you want?</label><br>
+        <input type="text" id="type2" placeholder="e.g. bar, line, pie, doughnut">
+        <br>
+        <label for="csvFile2">Upload your website visitors data:</label><br>
+        <input type="file" id="csvFile2" accept=".csv">
+        <p class="note">📌 CSV format should include two columns: <b>Date</b> and <b>Visitors</b>.</p>
+        <canvas id="Chart2"></canvas>
+        <button id="download2">Download Chart</button>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Daily Routine Tracker -->
+    <section>
+      <h2>Daily Routine Tracker</h2>
+      <div class="container">
+        <label for="type3">Which type of chart do you want?</label><br>
+        <input type="text" id="type3" placeholder="e.g. bar, line, pie, doughnut">
+        <br>
+        <label for="csvFile3">Upload your routine data:</label><br>
+        <input type="file" id="csvFile3" accept=".csv">
+        <p class="note">📌 CSV format should include two columns: <b>Activity</b> and <b>Hours</b>.</p>
+        <canvas id="Chart3"></canvas>
+        <button id="download3">Download Chart</button>
+      </div>
+    </section>
+
+    <!-- Favourite Food -->
+    <section>
+      <h2>Favourite Food Survey</h2>
+      <div class="container">
+        <label for="type4">Which type of chart do you want?</label><br>
+        <input type="text" id="type4" placeholder="e.g. bar, line, pie, doughnut">
+        <br>
+        <label for="csvFile4">Upload your favourite food data:</label><br>
+        <input type="file" id="csvFile4" accept=".csv">
+        <p class="note">📌 CSV format should include two columns: <b>Food Item</b> and <b>Votes</b>.</p>
+        <canvas id="Chart4"></canvas>
+        <button id="download4">Download Chart</button>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="dashboard-footer">
+    <p>Chart Dashboard &copy; 2025 | All Rights Reserved.</p>
+    <p>Designed & Developed by <b>Abhi</b></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

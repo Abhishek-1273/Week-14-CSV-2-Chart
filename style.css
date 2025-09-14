@@ -1,0 +1,152 @@
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #aa68f2, #2575fc);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      padding-top: 23px;
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+
+    }
+
+    .big-container {
+      width: 90vw;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 35px;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      margin-top: 20px;
+      width: 90%;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+      color: black;
+
+    }
+
+    input[type="text"],
+    input[type="file"] {
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      margin: 8px 0;
+      width: 100%;
+      max-width: 350px;
+      background: rgb(238, 237, 237);
+      border: 1px solid grey;
+    }
+
+    input[type="file"] {
+      background: rgb(238, 237, 237);
+      border: 1px solid grey;
+      color: black;
+      cursor: pointer;
+    }
+
+    input[type="text"]:focus {
+      border: 2px solid #242424;
+      background: #f1f1f1;
+    }
+
+    .note {
+      margin: 10px 0;
+      font-size: 0.9rem;
+      color: black;
+      opacity: 0.9;
+    }
+
+    canvas {
+      margin-top: 20px;
+      background: #f1f1f1;
+      width: 100% !important;
+      height: 500px !important;
+    }
+
+    hr {
+      width: 100%;
+      height: 2px;
+      border: none;
+      background-color: rgb(174, 137, 255);
+      margin-top: 3rem;
+    }
+
+    button[id^="download"] {
+      background-color: #4E79A7;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button[id^="download"]:hover {
+      background-color: #3B5E8A;
+      transform: translateY(-2px);
+    }
+
+    button[id^="download"]:active {
+      background-color: #2E4567;
+      transform: translateY(0);
+    }
+
+    button[id^="download"]:focus {
+      outline: none;
+      box-shadow: 0 0 5px #4E79A7;
+    }
+
+    .dashboard-footer {
+      text-align: center;
+      width: 100%;
+      background-color: #4E79A7;
+      color: white;
+      font-size: 14px;
+      border-top: 2px solid #3B5E8A;
+      margin-top: 30px;
+    }
+
+    .dashboard-footer b {
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 756px) {
+      .big-container {
+        flex-direction: column;
+      }
+
+      section {
+        flex-direction: column;
+      }
+    }
