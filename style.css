@@ -52,7 +52,43 @@
 
     }
 
-    input[type="text"],
+    /* Dropdown base */
+    select {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #222;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 10px 50px 10px 14px;
+      border-radius: 15px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      margin: 8px 10px 15px 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    select:hover {
+      background: rgba(78, 121, 167, 0.15);
+      border-color: #4E79A7;
+      box-shadow: 0 6px 14px rgba(78, 121, 167, 0.2);
+    }
+
+    select:focus {
+      outline: none;
+      border: 1px solid #4E79A7;
+      border-radius: 15px;
+      box-shadow: 0 0 8px rgba(78, 121, 167, 0.6);
+      background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+      background-repeat: no-repeat;
+      border-color: grey;
+      outline: 0;
+    }
+
     input[type="file"] {
       padding: 8px 10px;
       border-radius: 6px;
@@ -70,11 +106,6 @@
       border: 1px solid grey;
       color: black;
       cursor: pointer;
-    }
-
-    input[type="text"]:focus {
-      border: 2px solid #242424;
-      background: #f1f1f1;
     }
 
     .note {
